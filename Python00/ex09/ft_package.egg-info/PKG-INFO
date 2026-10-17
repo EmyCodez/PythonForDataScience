@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: ft_package
+Version: 0.0.1
+Summary: A sample package for python piscine project
+Author-email: Emilin Jose <esimpson.student@42abudhabi.ae>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/emycodez/PythonForDataScience
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# ft_package
+
+A sample Python package created for Exercise 09.
+
+## Installation
+
+Build the package:
+
+```bash
+python -m build
+```
+
+Install the generated package:
+
+```bash
+python -m pip install ./dist/ft_package-0.0.1-py3-none-any.whl
+```
+
+## Usage
+
+```python
+from ft_package import count_in_list
+
+print(count_in_list(["toto", "tata", "toto"], "toto"))
+# Output: 2
+
+print(count_in_list(["toto", "tata", "toto"], "tutu"))
+# Output: 0
+```
+
+## Function
+
+`count_in_list(lst, item)` returns the number of
+times `item` appears in `lst`.

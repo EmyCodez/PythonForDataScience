@@ -1,5 +1,6 @@
 from typing import Any
 
+
 def NULL_not_found(object: Any) -> int:
     if object is None:
         print("Nothing:", object, type(object))

@@ -47,7 +47,7 @@ def main():
                 "more than one argument is provided"
             )
 
-        if len(sys.argv) == 2:
+        if len(sys.argv) == 2 and sys.argv[1]:
             text = sys.argv[1]
         else:
             print("What is the text to count?")
@@ -57,8 +57,6 @@ def main():
 
     except AssertionError as error:
         print(f"AssertionError: {error}")
-    except EOFError:
-        pass
 
 
 if __name__ == "__main__":

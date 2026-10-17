@@ -1,17 +1,19 @@
 # ft_package
 
-A sample Python package for counting occurrences of an item in a list.
+A sample Python package created for Exercise 09.
 
 ## Installation
 
+Build the package:
+
 ```bash
-pip install ./dist/ft_package-0.0.1.tar.gz
+python -m build
 ```
 
-Alternatively, install the wheel:
+Install the generated package:
 
 ```bash
-pip install ./dist/ft_package-0.0.1-py3-none-any.whl
+python -m pip install ./dist/ft_package-0.0.1-py3-none-any.whl
 ```
 
 ## Usage
@@ -20,8 +22,13 @@ pip install ./dist/ft_package-0.0.1-py3-none-any.whl
 from ft_package import count_in_list
 
 print(count_in_list(["toto", "tata", "toto"], "toto"))
-# 2
+# Output: 2
 
 print(count_in_list(["toto", "tata", "toto"], "tutu"))
-# 0
+# Output: 0
 ```
+
+## Function
+
+`count_in_list(lst, item)` returns the number of
+times `item` appears in `lst`.

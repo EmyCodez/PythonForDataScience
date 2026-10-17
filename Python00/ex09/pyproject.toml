@@ -5,17 +5,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ft_package"
 version = "0.0.1"
-description = "A sample test package"
+description = "A sample package for python piscine project"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [
-    {name = "eagle", email = "eagle@42.fr"}
+    {name = "Emilin Jose", email = "es.student@42.com"}
 ]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/emycodez/PythonForDataScience"
 
 [tool.setuptools]
 packages = ["ft_package"]

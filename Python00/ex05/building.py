@@ -50,7 +50,7 @@ def main():
         if len(sys.argv) == 2:
             text = sys.argv[1]
         else:
-            text = input("What is the text to count?")
+            print("What is the text to count?")
             text = sys.stdin.read()
 
         display_counts(text)
